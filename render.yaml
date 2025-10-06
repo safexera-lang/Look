@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: discord-mobile-search-bot
+    runtime: python3
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    plan: free
+    env:
+      - key: DISCORD_BOT_TOKEN
+        value: YOUR_BOT_TOKEN_HERE
